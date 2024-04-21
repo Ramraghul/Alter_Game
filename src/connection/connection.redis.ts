@@ -1,7 +1,12 @@
 import * as redis from 'redis';
 import chalk from 'chalk';
 
-const client = redis.createClient();
+const redisConnectionUrl: string =  process.env.MY_DATABASE || 'redis://127.0.0.1:6379';
+
+const client = redis.createClient({
+    url: redisConnectionUrl
+});
+
 client.connect();
 
 client.on('connect', () => {
