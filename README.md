@@ -1,6 +1,6 @@
 # Post caching System
 
-This is the server for Post caching System
+This is the server for the caching System
 
 ## Installation
 
@@ -15,6 +15,8 @@ This is the server for Post caching System
     ```bash
     yarn install
     ```
+4. Need To Install The Redis Server for the caching system
+5. Install the Redisinsight also (View)
 
 ## Usage (Local)
 
@@ -22,10 +24,15 @@ This is the server for Post caching System
     ```bash
     yarn start or nodemon
     ```
+2. Start the Redis server:
+    ```bash
+    redis-server
+    ```
+    
 ## API Detail
 
 1. http://localhost:9000/api/generate_mock_data
-   This Endpoint Create a mockdata in Particular Server
+   This Endpoint Creates mock data in a Particular Server
 
 2. http://localhost:9000/api/recommendations/posts/?userId=6036675796
    This API is get post by ID. This API Work with caching System
