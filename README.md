@@ -29,14 +29,28 @@ This is the server for the caching System
     redis-server
     ```
     
-## API Detail
+## API Detail (Local && LIVE)
 
-1. http://localhost:9000/api/generate_mock_data
-   This Endpoint Creates mock data in a Particular Server
-
-2. http://localhost:9000/api/recommendations/posts/?userId=6036675796
-   This API is get post by ID. This API Work with caching System
-
+1. This Endpoint Creates mock data in a Particular Server
+   ## (Local)
+   ```bash
+   http://localhost:9000/api/generate_mock_data
+   ```
+   ## (LIVE)
+   ```bash
+   https://alter-game-server.vercel.app/api/generate_mock_data
+   ```
+   
+2. This API is GET post by ID. This API Works with the caching System
+   ## (Local)
+   ```bash
+   http://localhost:9000/api/recommendations/posts?userId=9604798002
+   ```
+   ## (LIVE)
+   ```bash
+   https://alter-game-server.vercel.app/api/recommendations/posts?userId=9604798002
+   ```
+   
 ## Contact
 
 For any inquiries or feedback, please contact [Raghul](mailto:raghulraghul111@gmail.com).
