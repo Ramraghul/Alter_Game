@@ -1,0 +1,150 @@
+{
+	"info": {
+		"_postman_id": "cb784d8d-6df2-41f1-91c9-4a727bd7f5ce",
+		"name": "Alter Games",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23497037"
+	},
+	"item": [
+		{
+			"name": "Live",
+			"item": [
+				{
+					"name": "Get Post By User Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://alter-game-server.vercel.app/api/recommendations/posts?userId=9604798002",
+							"protocol": "https",
+							"host": [
+								"alter-game-server",
+								"vercel",
+								"app"
+							],
+							"path": [
+								"api",
+								"recommendations",
+								"posts"
+							],
+							"query": [
+								{
+									"key": "userId",
+									"value": "9604798002"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Server Conformation",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://alter-game-server.vercel.app",
+							"protocol": "https",
+							"host": [
+								"alter-game-server",
+								"vercel",
+								"app"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Mock Data",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://alter-game-server.vercel.app/api/generate_mock_data",
+							"protocol": "https",
+							"host": [
+								"alter-game-server",
+								"vercel",
+								"app"
+							],
+							"path": [
+								"api",
+								"generate_mock_data"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Local",
+			"item": [
+				{
+					"name": "Server Working Conformation",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000"
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Mock Data",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/api/generate_mock_data",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"generate_mock_data"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User Post Get By User Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/api/recommendations/posts/?userId=6036675796",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"recommendations",
+								"posts",
+								""
+							],
+							"query": [
+								{
+									"key": "userId",
+									"value": "6036675796"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
